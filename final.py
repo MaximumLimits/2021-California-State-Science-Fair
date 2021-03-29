@@ -61,8 +61,11 @@ def create_and_train_TARnet(return_results=False, save_history=False, save_file=
         tf.keras.layers.MaxPooling2D(),
         tf.keras.layers.BatchNormalization(),
 
-        tf.keras.layers.Conv2D(6, 3, 1, 'same', kernel_initializer=initializer),  # revised
+        tf.keras.layers.Conv2D(6, 3, 1, 'same', kernel_initializer=initializer),
         tf.keras.layers.GlobalAveragePooling2D(),
+        # 0.8097 accuracy without data augmentation (compared to 0.8537)
+        # tf.keras.layers.Flatten(), 
+        # tf.keras.layers.Dense(6),
         tf.keras.layers.Activation('softmax')
     ]
 
@@ -73,8 +76,8 @@ def create_and_train_TARnet(return_results=False, save_history=False, save_file=
     train_acc = []
     val_acc = []
 
-    early_stopping = tf.keras.callbacks.EarlyStopping(monitor='val_loss', patience=3)  # val_loss
-    save_best_model = tf.keras.callbacks.ModelCheckpoint(save_file, monitor='val_loss', verbose=0, save_best_only=True, save_weights_only=True)  # val_loss
+    early_stopping = tf.keras.callbacks.EarlyStopping(monitor='val_loss', patience=3)  
+    save_best_model = tf.keras.callbacks.ModelCheckpoint(save_file, monitor='val_loss', verbose=0, save_best_only=True, save_weights_only=True)  
 
     first_learning_rate = 2.26e-4
     second_learning_rate = 3.35e-5
