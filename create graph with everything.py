@@ -1,6 +1,6 @@
 import tensorflow as tf
 import numpy as np
-from science_fair_8th_9th.images import load_images
+from images import load_images
 
 X_train, y_train, X_test, y_test, X_val, y_val = load_images()
 input_shape = X_train.shape[1:]
