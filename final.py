@@ -1,6 +1,6 @@
 import tensorflow as tf
 import numpy as np
-from science_fair_8th_9th.images import load_images
+from images import load_images
 tf.config.experimental.set_memory_growth(tf.config.list_physical_devices('GPU')[0], True)
 X_train, y_train, X_test, y_test, X_val, y_val = load_images(shuffle_before=True, num_augments=4)  # 2
 
