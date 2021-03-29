@@ -1,12 +1,14 @@
 # 2021-California-State-Science-Fair
-This repository contains code used to collect data for the 2021 California State Science Fair. The code contains little or no comments: it contains the exact code that I used to gather data.
+This repository contains code used to collect data for the 2021 California State Science Fair. The code contains little or no comments: it contains the exact code that I used to gather data. 
 
-"image.py" is used to save the raw photos from the dataset created by Kaggle user cchangcs (https://www.kaggle.com/asdasdasasdas/garbage-classification) as numpy arrays. The file also contains code for viewing, preprocessing, and loading the numpy arrays. 
+The raw photos and image dataset is not included in this repository. The datasest was created by Kaggle user cchangcs. (It can be downloaded at https://www.kaggle.com/asdasdasasdas/garbage-classification.)
 
-"pretest.py" contains a two-layer perceptron neural network containing two fully-connected layers. I created the neural network only with NumPy without machine learning libraries while I took the Stanford course _CS231n: Convolutional Neural Networks for Visual Recognition_ (http://cs231n.stanford.edu/2017/). Creating this network helped me fully understand the mathematics behind neural networks, including matrix operations, derivatives, and loss evaluation. "pretest.py" was created to debug "image.py" and determine whether I needed to study more before starting on this science project. 
+_image.py_ is used to save the raw photos from the iamge dataset as numpy arrays. The file also contains code for viewing, preprocessing, and loading the numpy arrays. 
 
-"create greaph with everything.py" contains the code for all the models and the graph that displays the 7 most significant ones. 
+_pretest.py_ contains a two-layer perceptron neural network containing two fully-connected layers. I created the neural network only with NumPy without machine learning libraries while I took the Stanford course _CS231n: Convolutional Neural Networks for Visual Recognition_ (http://cs231n.stanford.edu/2017/). Creating this network helped me fully understand the mathematics behind neural networks, including matrix operations, derivatives, and loss evaluation. _pretest.py_ was created to debug _image.py_ and determine whether I needed to study more before starting on this science project. 
 
-"fine tuning" was initially used to fine-tune the hyperparameters of TARnet, such as learning rate and batch size. However, after TARnet's architecture was changed, hyperparameters were manually chosen and evaluated.
+_create greaph with everything.py_ contains the code for all the models and the graph that displays the 7 most significant ones. 
 
-"final.py" contains code for creating, training, and evaluating the final iteration of TARnet. 
+_fine tuning.py_ was initially used to fine-tune the hyperparameters of a previous iteration of TARnet, such as learning rate and batch size. However, after TARnet's architecture was changed, hyperparameters were manually chosen and evaluated.
+
+_final.py_ contains code for creating, training, and evaluating the final iteration of TARnet. 
