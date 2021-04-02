@@ -7,7 +7,7 @@ The raw photos and image dataset is not included in this repository. The datases
 
 [_images.py_](https://github.com/MaximumLimits/2021-California-State-Science-Fair/blob/main/images.py) is used to save the raw photos from the image dataset as NumPy arrays. The file also contains code for viewing, preprocessing, augmenting, and loading the NumPy arrays. 
 
-[_pretest.py_]() contains a two-layer perceptron neural network containing two fully-connected layers. I created the neural network only with NumPy without machine learning libraries while I took the aforementioned Stanford course. _pretest.py_ was created to debug _image.py_ and determine whether I needed to learn more about neural networks before starting on this science project. 
+[_pretest.py_](https://github.com/MaximumLimits/2021-California-State-Science-Fair/blob/main/pretest.py) contains a two-layer perceptron neural network containing two fully-connected layers. I created the neural network only with NumPy without machine learning libraries while I took the aforementioned Stanford course. _pretest.py_ was created to debug _image.py_ and determine whether I needed to learn more about neural networks before starting on this science project. 
 
 [_create greaph with everything.py_](https://github.com/MaximumLimits/2021-California-State-Science-Fair/blob/main/create%20graph%20with%20everything.py) contains the code for all the models and the graph that displays the 7 most significant ones. 
 
