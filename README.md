@@ -1,7 +1,7 @@
 # 2021-California-State-Science-Fair
 This repository contains code used to collect data for the 2021 California State Science Fair. The code contains little or no comments: it contains the exact code that I used to gather data. 
 
-_CS231n Assignments_ contains the assignments I completed while I took the Stanford course [CS231n: Convolutional Neural Networks for Visual Recognition](http://cs231n.stanford.edu/2017/). These assignmented helped me fully understand the mathematics behind neural networks, including matrix operations, derivatives, training, optimization techniques, and loss evaluation.
+[CS231n Assignments](https://github.com/MaximumLimits/2021-California-State-Science-Fair/tree/main/CS231n%20Assignments) contains the assignments I completed while I took the Stanford course [CS231n: Convolutional Neural Networks for Visual Recognition](http://cs231n.stanford.edu/2017/). These assignmented helped me fully understand the mathematics behind neural networks, including matrix operations, derivatives, training, optimization techniques, and loss evaluation.
 
 The raw photos and image dataset is not included in this repository. The datasest was created by Kaggle user _cchangcs_. (It can be downloaded at https://www.kaggle.com/asdasdasasdas/garbage-classification.)
 
