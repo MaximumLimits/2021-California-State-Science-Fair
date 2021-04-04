@@ -63,7 +63,6 @@ def create_and_train_TARnet(return_results=False, save_history=False, save_file=
 
         tf.keras.layers.Conv2D(6, 3, 1, 'same', kernel_initializer=initializer),
         tf.keras.layers.GlobalAveragePooling2D(),
-        # 0.8097 accuracy without data augmentation (compared to 0.8537)
         # tf.keras.layers.Flatten(), 
         # tf.keras.layers.Dense(6),
         tf.keras.layers.Activation('softmax')
